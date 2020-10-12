@@ -16,6 +16,7 @@ fn main() {
                   .filter(|s| !s.is_empty())
                   .map(|s| s.parse().unwrap())
                   .collect();
+        assert!(row.len() == 9, "The input line didn't have exactly 9 numbers");
         board.push(row);
     }
 
